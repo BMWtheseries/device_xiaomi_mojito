@@ -95,7 +95,7 @@ LOC_HIDL_VERSION := 4.0
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(DEVICE_PATH)/configs/hidl/framework_compatibility_matrix.xml \
-    vendor/evolution/config/device_framework_matrix.xml
+    vendor/nusantara/config/device_framework_matrix.xml
 DEVICE_MANIFEST_FILE += hardware/qcom-caf/sm8150/media/conf_files/sm6150/c2_manifest_vendor.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/hidl/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/manifest.xml
@@ -120,6 +120,7 @@ BOARD_KERNEL_CMDLINE += androidboot.fstab_suffix=qcom
 
 TARGET_KERNEL_CONFIG := vendor/mojito_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/mojito
+TARGET_KERNEL_CLANG_VERSION := latest
 TARGET_KERNEL_ADDITIONAL_FLAGS := \
     LLVM=1 \
     LLVM_IAS=1
